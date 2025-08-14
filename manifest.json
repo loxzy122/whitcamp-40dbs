@@ -1,4 +1,4 @@
-const manifestContent = {
+{
   "name": "40 Days Bible Studies",
   "short_name": "Bible Studies",
   "description": "Complete 40-day Bible study program with daily teachings and progress tracking",
