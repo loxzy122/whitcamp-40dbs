@@ -3,7 +3,7 @@ const CACHE_NAME = 'bible-studies-v1.0.0';
 const urlsToCache = [
   '/',
   '/manifest.json',
-  '/40 Days Bible Studies .html', // Your main HTML file
+  '/index.html', // Your main HTML file
   'https://cdn.tailwindcss.com',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css',
   // Add any other assets you want to cache
