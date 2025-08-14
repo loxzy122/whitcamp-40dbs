@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1e3a8a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="40 Days Bible Studies">
+    <meta name="application-name" content="40 Days Bible Studies">
+   <title>40 Days Bible Studies - Quick Navigation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16x16.png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bible-blue': '#1e3a8a',
+                        'bible-gold': '#f59e0b',
+                        'bible-light': '#eff6ff'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-bible-light to-blue-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-bible-blue text-white shadow-2xl">
+        <div class="container mx-auto px-4 py-8">
+            <div class="text-center">
+                <i class="fas fa-book-open text-4xl mb-4 text-bible-gold"></i>
+                <h1 class="text-4xl md:text-5xl font-bold mb-2">WHITCAMP GLOBAL MISSIONS</h1>
+                <h1 class="text-2xl md:text-3xl font-bold mb-2">40 Days Bible Studies</h1>
+                <p class="text-xl opacity-90 text-bible-gold">Quick Navigation to Daily Teachings</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-sm font-medium text-gray-700">Study Progress</span>
+                <span class="text-sm font-medium text-gray-700">40/40 Days</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-bible-gold h-2 rounded-full transition-all duration-300" style="width: 100%"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Search/Filter -->
+        <div class="mb-8">
+            <div class="max-w-md mx-auto">
+                <div class="relative">
+                    <input type="text" id="searchInput" placeholder="Search teachings..."
+                           class="w-full px-4 py-3 pl-10 pr-4 text-gray-700 bg-white border border-gray-300 rounded-lg focus:outline-none focus:border-bible-blue focus:ring-2 focus:ring-bible-blue focus:ring-opacity-20">
+                    <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Study Links Grid -->
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3" id="studyGrid">
+            <!-- Day 1 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">1</div>
+                        <div class="text-sm text-gray-500">10/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Bible Teaching Day 1</h3>
+                    <a href="https://drive.google.com/file/d/1ocOD8fZWuiANVbaLQe3D2AkW9judvNr4/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">2</div>
+                        <div class="text-sm text-gray-500">11/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Bible Teaching Day 2</h3>
+                    <a href="https://drive.google.com/file/d/1znMxX9h12vvpSzjq0CFGYJUq9aL02YTX/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">3</div>
+                        <div class="text-sm text-gray-500">12/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Bible Teaching Day 3</h3>
+                    <a href="https://drive.google.com/file/d/1TXWCBvwd_3zsvHVcqgdpFniLpR4Zs2hc/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">4</div>
+                        <div class="text-sm text-gray-500">13/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Bible Teaching Day 4</h3>
+                    <a href="https://drive.google.com/file/d/1yTQ5CTKEIoBTy_1wmH13n8j-MNP7_B8_/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 5 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-gold text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">5</div>
+                        <div class="text-sm text-gray-500">14/01/25</div>
+                        <div class="ml-2">
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2 py-1 rounded-full">MUST WATCH</span>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Bible Teaching Day 5</h3>
+                    <a href="https://drive.google.com/file/d/1iukrNStSb7wWxK2yvppBuTKxawXlltGT/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 6 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">6</div>
+                        <div class="text-sm text-gray-500">15/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">The Efficacy of the Word of God</h3>
+                    <p class="text-sm text-gray-600 mb-3">A Powerful Teaching</p>
+                    <a href="https://drive.google.com/file/d/14X2bEvnWoWqfitinV-WctQnufi9kHrbH/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 7 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">7</div>
+                        <div class="text-sm text-gray-500">16/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Bible Teaching Day 7</h3>
+                    <a href="https://drive.google.com/file/d/1-48Y7xDFQd33mRIh-CvP-xXtk5yO-Kpw/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 8 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">8</div>
+                        <div class="text-sm text-gray-500">17/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">The Principle & Power of the Mind</h3>
+                    <a href="https://drive.google.com/file/d/169vpRifNQ2kX0xWXn6RmQWEQOahUEQJr/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 9 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">9</div>
+                        <div class="text-sm text-gray-500">18/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Maximising The Time & Seasons</h3>
+                    <a href="https://drive.google.com/file/d/19tq0C8PnX86DX-z2n881U7kG1iQnlwpl/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 10 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">10</div>
+                        <div class="text-sm text-gray-500">19/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">The Need For Discernment, The Harvest</h3>
+                    <a href="https://drive.google.com/file/d/1mgOJ4qHASkfEoLZ9rymBp2T-ReaBKU-z/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 11 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">11</div>
+                        <div class="text-sm text-gray-500">20/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Impediments To A Great Harvest</h3>
+                    <a href="https://drive.google.com/file/d/18F2POacpVPxHvOWt9SkoPqprdllvrBqS/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 12 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">12</div>
+                        <div class="text-sm text-gray-500">21/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Prosperity as a Sickle</h3>
+                    <a href="https://drive.google.com/file/d/1MeIaLGyulIT4czzPYLJdI6z14umdzXLG/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 13 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">13</div>
+                        <div class="text-sm text-gray-500">22/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Emergency vs Preparation</h3>
+                    <a href="https://drive.google.com/file/d/1sii3qeQOXDVDWcmTU8hdF_jWlzLgiU5I/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 14 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">14</div>
+                        <div class="text-sm text-gray-500">23/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">The Kingdom of God - A Treasure Hidden</h3>
+                    <a href="https://drive.google.com/file/d/1NvRu4h3JwSwqgc87rXLcEEfqtxcL9dIW/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 15 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">15</div>
+                        <div class="text-sm text-gray-500">24/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Divine Strength By The Holy Spirit</h3>
+                    <a href="https://drive.google.com/file/d/1uUqVkJkFnzpuehQl5jgsecUidCY5s56L/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 16 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">16</div>
+                        <div class="text-sm text-gray-500">25/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">How To Take Heed In These End Times</h3>
+                    <a href="https://drive.google.com/file/d/1td8XG-8FTbYfaYi-H9V_2QJ6xXd9aSlH/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 17 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">17</div>
+                        <div class="text-sm text-gray-500">26/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">How To Take Heed In End Times Pt 2</h3>
+                    <a href="https://drive.google.com/file/d/1l-DZrse8kiDE84OhkdjWctDxqhBITBO9/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 18 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">18</div>
+                        <div class="text-sm text-gray-500">27/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">How To Take Heed In End Times Pt 3</h3>
+                    <a href="https://drive.google.com/file/d/1V-YNhP9fmjNrWGnJwwuMPigescEcg822/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 19 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">19</div>
+                        <div class="text-sm text-gray-500">28/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Two Perspectives of the Ark (Part 1)</h3>
+                    <a href="https://drive.google.com/file/d/1Ym_NzzobWsLzwACf1A_NnYsq8N5gdge8/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 20 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">20</div>
+                        <div class="text-sm text-gray-500">29/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Two Perspectives of the Ark (Part 2)</h3>
+                    <a href="https://drive.google.com/file/d/1hlOwjA6TCIwcSaJ5LwSvOPZoQENLWd8W/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 21 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">21</div>
+                        <div class="text-sm text-gray-500">30/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Two Perspectives of the Ark (Part 3)</h3>
+                    <a href="https://drive.google.com/file/d/1Rm5O6y8-pnFV9e86P0AhCVcTUuusEWu0/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 22 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">22</div>
+                        <div class="text-sm text-gray-500">31/01/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Two Perspectives of the Ark (Part 4)</h3>
+                    <p class="text-sm text-gray-600 mb-3">The Political Agenda of the End Time</p>
+                    <a href="https://drive.google.com/file/d/1H7-LH2-Q4gV320GRJTk_H7ZU5pE_tGba/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 23 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">23</div>
+                        <div class="text-sm text-gray-500">01/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">The Book of Revelation - The Seven Churches</h3>
+                    <a href="https://drive.google.com/file/d/1gv9pRsmN2Y8lA3jnDsc-8nn5XI9sZQJl/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 24 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">24</div>
+                        <div class="text-sm text-gray-500">02/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">The Book of Revelation - The Laodicean Church</h3>
+                    <a href="https://drive.google.com/file/d/1BS3Rag9oGTMKgYluTqCH7qVvTV9eiVJr/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 25 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">25</div>
+                        <div class="text-sm text-gray-500">03/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">An Exposition of Revelation 6 to 19</h3>
+                    <a href="https://drive.google.com/file/d/1-n52ItC56vua4UH9w0vRP1DyQnwbF6N6/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 26 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">26</div>
+                        <div class="text-sm text-gray-500">04/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">An Exposition of Revelation 20 (Part 1)</h3>
+                    <a href="https://drive.google.com/file/d/1jB_d6Q3xhxJX40644oAfHdt2vnDmwsrf/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 27 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">27</div>
+                        <div class="text-sm text-gray-500">05/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">An Exposition of Revelation 20 to 22</h3>
+                    <a href="https://drive.google.com/file/d/1XHIGCfnh5nYMOC3MflxZE18rPIUVyuaf/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 28 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">28</div>
+                        <div class="text-sm text-gray-500">06/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">An Exposition of Matthew 24 (Part 1)</h3>
+                    <a href="https://drive.google.com/file/d/12axhCpuFxx-XL_ImD6EgaKhh6aQh3eyL/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 29 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">29</div>
+                        <div class="text-sm text-gray-500">07/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">An Exposition of Matthew 24 (Part 2)</h3>
+                    <a href="https://drive.google.com/file/d/1fE3WgO-OtKMnuIYOYwWk2q58mx7uNPfo/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 30 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">30</div>
+                        <div class="text-sm text-gray-500">08/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">An Exposition of Matthew 24 (Part 3 of 3)</h3>
+                    <a href="https://drive.google.com/file/d/19Kr-D5eecao0CYt-yxMC398adRw47i4K/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 31 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">31</div>
+                        <div class="text-sm text-gray-500">09/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">An Exposition of Matthew 24 (Part 3 of 3) - The Judgement Of The Gifts</h3>
+                    <a href="https://drive.google.com/file/d/1CQUx4bYmfsVlcvzXnopRaJPyGGt00zka/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 32 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">32</div>
+                        <div class="text-sm text-gray-500">10/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">An Exposition of Matthew 25 - The Judgement of the Nations</h3>
+                    <a href="https://drive.google.com/file/d/1215SGvoHd4hF70gTOLnK_4tT-itqU26J/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 33 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">33</div>
+                        <div class="text-sm text-gray-500">11/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">The Typology of the Rapture of the Church (Pt 1)</h3>
+                    <a href="https://drive.google.com/file/d/1yuOngsSW6RSgSLE7BJPxir5B4quMkt5M/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 34 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">34</div>
+                        <div class="text-sm text-gray-500">12/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">The Typology of the Rapture of the Church (Pt 2)</h3>
+                    <a href="https://drive.google.com/file/d/1rNDyRWhBww86CJqzHrJpdtsOzFKFJfUE/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 35 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">35</div>
+                        <div class="text-sm text-gray-500">13/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">The Second Perspective of the Ark (Pt 1)</h3>
+                    <a href="https://drive.google.com/file/d/1T2RBxar35RMSOvps46siXGHymV98Alhf/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 36 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">36</div>
+                        <div class="text-sm text-gray-500">14/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">The Second Perspective of the Ark (Pt 2)</h3>
+                    <a href="https://drive.google.com/file/d/19nUEHXsHNxMZqGLhaakdCvGhExjOd5q4/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 37 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">37</div>
+                        <div class="text-sm text-gray-500">15/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Daniel 7 vs Revelation 13</h3>
+                    <a href="https://drive.google.com/file/d/1LcPjA1yxCtm_0CdnyJTD66LfJkt9u3u4/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 38 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">38</div>
+                        <div class="text-sm text-gray-500">16/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Comparison of Antiochus and the anti-Christ</h3>
+                    <a href="https://drive.google.com/file/d/1q9KWwH54MGhSf-B6X4JfnRakHMX6of1C/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 39 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">39</div>
+                        <div class="text-sm text-gray-500">17/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">An Exposition of Daniel 9</h3>
+                    <a href="https://drive.google.com/file/d/1B6e0vYdmrRTAfrsDmfYZKxoNBcd3IFv5/view?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Day 40 -->
+            <div class="study-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-bible-blue text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">40</div>
+                        <div class="text-sm text-gray-500">18/02/25</div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">An Exposition of Daniel 9</h3>
+                    <a href="https://docs.google.com/spreadsheets/d/1AktdH0IGr5hYkHX_QZUK0BT9L2cF1y0gFXCJ7hveDw8/edit?usp=sharing"
+                       target="_blank" class="inline-flex items-center px-4 py-2 bg-bible-blue text-white rounded-lg hover:bg-blue-800 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Watch Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Search functionality for 40 Days Bible Studies
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const studyCards = document.querySelectorAll('.study-card');
+    const studyGrid = document.getElementById('studyGrid');
+
+    // Search functionality
+    function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        let visibleCount = 0;
+
+        studyCards.forEach(card => {
+            const title = card.querySelector('h3').textContent.toLowerCase();
+            const description = card.querySelector('p') ? card.querySelector('p').textContent.toLowerCase() : '';
+            const dayNumber = card.querySelector('.rounded-full').textContent;
+
+            // Check if search term matches title, description, or day number
+            const isMatch = title.includes(searchTerm) ||
+                          description.includes(searchTerm) ||
+                          dayNumber.includes(searchTerm) ||
+                          searchTerm === '';
+
+            if (isMatch) {
+                card.style.display = 'block';
+                card.style.opacity = '1';
+                card.style.transform = 'scale(1)';
+                visibleCount++;
+
+                // Add fade-in animation
+                setTimeout(() => {
+                    card.style.transition = 'all 0.3s ease';
+                }, 50);
+            } else {
+                card.style.display = 'none';
+                card.style.opacity = '0';
+                card.style.transform = 'scale(0.95)';
+            }
+        });
+
+        // Show "No results found" message if no cards match
+        showNoResultsMessage(visibleCount === 0 && searchTerm !== '');
+    }
+
+    // Show/hide no results message
+    function showNoResultsMessage(show) {
+        let noResultsMsg = document.getElementById('noResultsMessage');
+
+        if (show && !noResultsMsg) {
+            noResultsMsg = document.createElement('div');
+            noResultsMsg.id = 'noResultsMessage';
+            noResultsMsg.className = 'col-span-full text-center py-12';
+            noResultsMsg.innerHTML = `
+                <div class="text-gray-400 mb-4">
+                    <i class="fas fa-search text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-600 mb-2">No studies found</h3>
+                <p class="text-gray-500">Try adjusting your search terms</p>
+            `;
+            studyGrid.appendChild(noResultsMsg);
+        } else if (!show && noResultsMsg) {
+            noResultsMsg.remove();
+        }
+    }
+
+    // Add search event listeners
+    searchInput.addEventListener('input', performSearch);
+    searchInput.addEventListener('keyup', function(e) {
+        if (e.key === 'Enter') {
+            performSearch();
+        }
+    });
+
+    // Clear search functionality
+    searchInput.addEventListener('focus', function() {
+        this.select();
+    });
+
+    // Add keyboard shortcut for search (Ctrl/Cmd + K)
+    document.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+            e.preventDefault();
+            searchInput.focus();
+        }
+    });
+
+    // Enhanced card interactions
+    studyCards.forEach(card => {
+        // Add hover effects
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+        });
+
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '';
+        });
+
+        // Add click tracking for analytics (optional)
+        const watchButton = card.querySelector('a');
+        if (watchButton) {
+            watchButton.addEventListener('click', function(e) {
+                const dayNumber = card.querySelector('.rounded-full').textContent;
+                const title = card.querySelector('h3').textContent;
+
+                // Optional: Track clicks for analytics
+                console.log(`Clicked: Day ${dayNumber} - ${title}`);
+
+                // Add visual feedback
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        }
+    });
+
+    // Progress bar functionality
+    function initializeProgressBar() {
+        const progressBar = document.querySelector('.bg-bible-gold');
+        const progressText = document.querySelector('.container .flex .text-sm:last-child');
+        const totalDays = 40;
+        let completedDays = 0;
+
+        // Get completed days from localStorage (or you can set this manually)
+        const savedProgress = localStorage.getItem('bible-study-progress');
+        if (savedProgress) {
+            completedDays = parseInt(savedProgress, 10);
+        } else {
+            // Default: show all as completed for demo, or set to 0 for fresh start
+            completedDays = 0; // Change this to 0 if you want fresh start
+        }
+
+        // Update progress display
+        function updateProgressDisplay() {
+            const percentage = Math.round((completedDays / totalDays) * 100);
+
+            if (progressBar) {
+                progressBar.style.width = '0%';
+                setTimeout(() => {
+                    progressBar.style.width = `${percentage}%`;
+                }, 300);
+            }
+
+            if (progressText) {
+                progressText.textContent = `${completedDays}/${totalDays} Days`;
+            }
+
+            // Update the progress description
+            const progressLabel = document.querySelector('.container .flex .text-sm:first-child');
+            if (progressLabel) {
+                if (completedDays === totalDays) {
+                    progressLabel.textContent = 'Study Complete! 🎉';
+                } else if (completedDays > 0) {
+                    progressLabel.textContent = 'Study Progress';
+                } else {
+                    progressLabel.textContent = 'Ready to Begin';
+                }
+            }
+
+            // Color the progress bar based on completion
+            if (progressBar) {
+                if (percentage === 100) {
+                    progressBar.classList.remove('bg-bible-gold');
+                    progressBar.classList.add('bg-green-500');
+                } else if (percentage >= 75) {
+                    progressBar.classList.remove('bg-bible-gold', 'bg-green-500');
+                    progressBar.classList.add('bg-bible-gold');
+                } else if (percentage >= 25) {
+                    progressBar.classList.remove('bg-green-500');
+                    progressBar.classList.add('bg-bible-gold');
+                }
+            }
+        }
+
+        // Mark day as completed
+        function markDayCompleted(dayNumber) {
+            const day = parseInt(dayNumber, 10);
+            if (day >= 1 && day <= totalDays) {
+                let completedDaysArray = getCompletedDaysArray();
+                if (!completedDaysArray.includes(day)) {
+                    completedDaysArray.push(day);
+                    completedDaysArray.sort((a, b) => a - b);
+                    localStorage.setItem('bible-study-completed-days', JSON.stringify(completedDaysArray));
+                    completedDays = completedDaysArray.length;
+                    localStorage.setItem('bible-study-progress', completedDays.toString());
+                    updateProgressDisplay();
+                    updateCardCompletionStatus();
+
+                    // Show completion notification
+                    showCompletionNotification(day);
+                }
+            }
+        }
+
+        // Get array of completed days
+        function getCompletedDaysArray() {
+            const saved = localStorage.getItem('bible-study-completed-days');
+            if (saved) {
+                try {
+                    return JSON.parse(saved);
+                } catch (e) {
+                    return [];
+                }
+            }
+            // If no saved data, assume all days are completed for demo
+            return Array.from({length: completedDays}, (_, i) => i + 1);
+        }
+
+        // Update visual status of cards based on completion
+        function updateCardCompletionStatus() {
+            const completedDaysArray = getCompletedDaysArray();
+
+            studyCards.forEach(card => {
+                const dayNumber = parseInt(card.querySelector('.rounded-full').textContent, 10);
+                const isCompleted = completedDaysArray.includes(dayNumber);
+
+                // Remove existing completion indicators
+                const existingIndicator = card.querySelector('.completion-indicator');
+                if (existingIndicator) {
+                    existingIndicator.remove();
+                }
+
+                if (isCompleted) {
+                    // Add completed indicator
+                    const completedIndicator = document.createElement('div');
+                    completedIndicator.className = 'completion-indicator absolute top-2 right-2 bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs';
+                    completedIndicator.innerHTML = '<i class="fas fa-check"></i>';
+                    card.style.position = 'relative';
+                    card.appendChild(completedIndicator);
+
+                    // Add completed styling
+                    card.classList.add('completed-study');
+                } else {
+                    card.classList.remove('completed-study');
+                }
+            });
+        }
+
+        // Show completion notification
+        function showCompletionNotification(dayNumber) {
+            const notification = document.createElement('div');
+            notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform translate-x-full opacity-0 transition-all duration-300';
+            notification.innerHTML = `
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle mr-2"></i>
+                    <span>Day ${dayNumber} completed!</span>
+                </div>
+            `;
+
+            document.body.appendChild(notification);
+
+            // Animate in
+            setTimeout(() => {
+                notification.classList.remove('translate-x-full', 'opacity-0');
+            }, 100);
+
+            // Animate out and remove
+            setTimeout(() => {
+                notification.classList.add('translate-x-full', 'opacity-0');
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.parentNode.removeChild(notification);
+                    }
+                }, 300);
+            }, 3000);
+        }
+
+        // Add click handlers to watch buttons to mark as completed
+        studyCards.forEach(card => {
+            const watchButton = card.querySelector('a');
+            const dayNumber = card.querySelector('.rounded-full').textContent;
+
+            if (watchButton) {
+                watchButton.addEventListener('click', function(e) {
+                    // Mark as completed after a short delay (simulating watching)
+                    setTimeout(() => {
+                        markDayCompleted(dayNumber);
+                    }, 1000);
+                });
+            }
+        });
+
+        // Add reset progress button (for testing/admin purposes)
+        function addProgressControls() {
+            const header = document.querySelector('header .container');
+            if (header) {
+                const controlsDiv = document.createElement('div');
+                controlsDiv.className = 'mt-4 text-center';
+                controlsDiv.innerHTML = `
+                    <button id="resetProgress" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg mr-2 text-sm">
+                        <i class="fas fa-undo mr-1"></i> Reset Progress
+                    </button>
+                    <button id="markAllComplete" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm">
+                        <i class="fas fa-check-double mr-1"></i> Mark All Complete
+                    </button>
+                `;
+                header.appendChild(controlsDiv);
+
+                // Reset progress handler
+                document.getElementById('resetProgress').addEventListener('click', function() {
+                    if (confirm('Are you sure you want to reset all progress?')) {
+                        localStorage.removeItem('bible-study-progress');
+                        localStorage.removeItem('bible-study-completed-days');
+                        completedDays = 0;
+                        updateProgressDisplay();
+                        updateCardCompletionStatus();
+
+                        // Show reset notification
+                        const notification = document.createElement('div');
+                        notification.className = 'fixed top-4 right-4 bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg z-50';
+                        notification.innerHTML = '<i class="fas fa-info-circle mr-2"></i>Progress reset successfully!';
+                        document.body.appendChild(notification);
+
+                        setTimeout(() => {
+                            if (notification.parentNode) {
+                                notification.parentNode.removeChild(notification);
+                            }
+                        }, 3000);
+                    }
+                });
+
+                // Mark all complete handler
+                document.getElementById('markAllComplete').addEventListener('click', function() {
+                    if (confirm('Mark all 40 days as completed?')) {
+                        const allDays = Array.from({length: totalDays}, (_, i) => i + 1);
+                        localStorage.setItem('bible-study-completed-days', JSON.stringify(allDays));
+                        completedDays = totalDays;
+                        localStorage.setItem('bible-study-progress', completedDays.toString());
+                        updateProgressDisplay();
+                        updateCardCompletionStatus();
+                    }
+                });
+            }
+        }
+
+        // Initialize everything
+        updateProgressDisplay();
+        updateCardCompletionStatus();
+
+        // Uncomment the line below if you want to show the admin controls
+        // addProgressControls();
+    }
+
+    // Initialize progress bar
+    initializeProgressBar();
+
+    // Add scroll-based animations for cards (optional enhancement)
+    function animateCardsOnScroll() {
+        const cards = document.querySelectorAll('.study-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    }
+
+    // Initialize scroll animations
+    animateCardsOnScroll();
+
+    // Add search suggestions (optional enhancement)
+    function addSearchSuggestions() {
+        const suggestions = [
+            'revelation', 'matthew', 'ark', 'harvest', 'end times',
+            'church', 'daniel', 'rapture', 'kingdom', 'prosperity'
+        ];
+
+        const suggestionsList = document.createElement('div');
+        suggestionsList.id = 'searchSuggestions';
+        suggestionsList.className = 'hidden absolute top-full left-0 right-0 bg-white border border-gray-300 rounded-b-lg shadow-lg z-10 max-h-48 overflow-y-auto';
+
+        searchInput.parentNode.appendChild(suggestionsList);
+        searchInput.parentNode.style.position = 'relative';
+
+        searchInput.addEventListener('input', function() {
+            const value = this.value.toLowerCase();
+            if (value.length > 0) {
+                const matchingSuggestions = suggestions.filter(s => s.includes(value));
+                if (matchingSuggestions.length > 0) {
+                    suggestionsList.innerHTML = matchingSuggestions.map(suggestion =>
+                        `<div class="px-4 py-2 hover:bg-gray-100 cursor-pointer suggestion-item">${suggestion}</div>`
+                    ).join('');
+                    suggestionsList.classList.remove('hidden');
+                } else {
+                    suggestionsList.classList.add('hidden');
+                }
+            } else {
+                suggestionsList.classList.add('hidden');
+            }
+        });
+
+        // Handle suggestion clicks
+        suggestionsList.addEventListener('click', function(e) {
+            if (e.target.classList.contains('suggestion-item')) {
+                searchInput.value = e.target.textContent;
+                performSearch();
+                suggestionsList.classList.add('hidden');
+            }
+        });
+
+        // Hide suggestions when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !suggestionsList.contains(e.target)) {
+                suggestionsList.classList.add('hidden');
+            }
+        });
+    }
+
+    // Initialize search suggestions
+    addSearchSuggestions();
+
+    // Add keyboard navigation for study cards
+    let currentCardIndex = -1;
+    const allCards = Array.from(studyCards);
+
+    document.addEventListener('keydown', function(e) {
+        const visibleCards = allCards.filter(card => card.style.display !== 'none');
+
+        if (e.key === 'ArrowDown' && document.activeElement !== searchInput) {
+            e.preventDefault();
+            currentCardIndex = Math.min(currentCardIndex + 1, visibleCards.length - 1);
+            focusCard(visibleCards[currentCardIndex]);
+        } else if (e.key === 'ArrowUp' && document.activeElement !== searchInput) {
+            e.preventDefault();
+            currentCardIndex = Math.max(currentCardIndex - 1, 0);
+            focusCard(visibleCards[currentCardIndex]);
+        } else if (e.key === 'Enter' && currentCardIndex >= 0) {
+            const focusedCard = visibleCards[currentCardIndex];
+            const watchButton = focusedCard?.querySelector('a');
+            if (watchButton) {
+                watchButton.click();
+            }
+        }
+    });
+
+    function focusCard(card) {
+        if (card) {
+            // Remove focus from other cards
+            allCards.forEach(c => c.classList.remove('ring-2', 'ring-bible-blue'));
+
+            // Add focus to current card
+            card.classList.add('ring-2', 'ring-bible-blue');
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }
+
+    // Initialize with a subtle entrance animation
+    setTimeout(() => {
+        document.body.classList.add('loaded');
+    }, 100);
+
+    // Add this call at the end of your DOMContentLoaded event listener
+   initializePWA();
+});
+
+//  initializePWA();
+
+// Add some additional CSS classes dynamically for enhanced styling
+const style = document.createElement('style');
+style.textContent = `
+    .study-card {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .study-card:hover {
+        transform: translateY(-5px) !important;
+    }
+
+    .completed-study {
+        background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+        border-color: #22c55e !important;
+    }
+
+    .completed-study .bg-bible-blue {
+        background: #22c55e !important;
+    }
+
+    .completion-indicator {
+        animation: bounceIn 0.5s ease-out;
+    }
+
+    @keyframes bounceIn {
+        0% {
+            opacity: 0;
+            transform: scale(0);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .suggestion-item {
+        transition: background-color 0.2s ease;
+    }
+
+    #searchSuggestions {
+        animation: slideDown 0.2s ease-out;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .bg-bible-gold {
+        transition: width 1s ease-in-out;
+    }
+
+    body.loaded .study-card {
+        animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .progress-glow {
+        box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+    }
+`;
+document.head.appendChild(style);
+    </script>
+</body>
+</html>
