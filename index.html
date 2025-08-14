@@ -1144,7 +1144,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 100);
 
     // Add this call at the end of your DOMContentLoaded event listener
-   initializePWA();
+   //initializePWA();
 });
 
 //  initializePWA();
@@ -1243,5 +1243,57 @@ document.head.appendChild(style);
     </span>
   </div>
 </footer>
+    <script>
+/* Register Service Worker */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').then(() => {
+      console.log('✅ Service Worker registered');
+    }).catch(err => {
+      console.error('❌ Service Worker registration failed:', err);
+    });
+  });
+}
+
+let deferredPrompt;
+
+/* Create Tailwind-styled Install Button */
+const installButton = document.createElement('button');
+installButton.id = 'install-app-btn';
+installButton.className =
+  'fixed bottom-5 right-5 bg-bible-blue text-white px-5 py-3 rounded-lg shadow-lg hover:bg-blue-800 transition-all duration-300 flex items-center space-x-2 z-50 hidden';
+
+installButton.innerHTML = `
+  <i class="fas fa-download"></i>
+  <span>Install App</span>
+`;
+
+document.body.appendChild(installButton);
+
+/* Listen for Install Prompt */
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  installButton.classList.remove('hidden');
+});
+
+/* Handle Install Button Click */
+installButton.addEventListener('click', async () => {
+  installButton.classList.add('hidden');
+  deferredPrompt.prompt();
+  const choiceResult = await deferredPrompt.userChoice;
+  console.log('User choice:', choiceResult.outcome);
+  deferredPrompt = null;
+});
+
+/* Hide Button After Installation */
+window.addEventListener('appinstalled', () => {
+  console.log('📲 PWA installed successfully!');
+  installButton.classList.add('hidden');
+});
+</script>
+
+
+
 </body>
 </html>
